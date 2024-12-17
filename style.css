@@ -14,8 +14,8 @@ h2 {
 
 .container {
   width: 80%;
-  margin: 0 auto;
-  padding: 10px 0;
+  margin: auto;
+  padding: 10px;
 }
 
 /* header */
@@ -43,7 +43,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 40px;
+  margin: 0 35px;
 }
 
 nav ul li a {
@@ -57,10 +57,17 @@ nav ul li a:hover {
   color: #9748cc;
 }
 
+img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
 /* welcome */
-#welcome {
-  background: url("images/mikeBackground.jpg") center/cover;
-  height: 60vh;
+.block {
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,18 +75,22 @@ nav ul li a:hover {
   text-align: center;
 }
 
-#welcome-content {
+.block-content {
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 10px;
 }
 
-#welcome-content h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+.block-content h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
 }
 
-#welcome-content .button {
+.block-content p {
+  font-size: 20px;
+}
+
+.block-content .button {
   display: inline-block;
   padding: 10px 20px;
   color: #ffffff;
@@ -90,40 +101,32 @@ nav ul li a:hover {
   transition: background-color 0.3s;
 }
 
-#welcome-content .button:hover {
+.block-content .button:hover {
   background-color: #390263;
 }
 
-/* about */
-#about {
+.section {
   background-color: #1c1c1c;
-  padding: 40px 0;
+  padding: 40px;
 }
 
-#about img {
-  width: 100%;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-/* video */
 #video-home {
-  padding: 40px 0;
+  padding: 40px;
   background: #121212;
   text-align: center;
 }
 
 #yt-home {
   width: 100%;
-  border-radius: 10px;
   max-width: 560px;
   padding-top: 20px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 iframe {
   width: 100%;
   border: none;
+  border-radius: 10px;
 }
 
 /* footer */
@@ -150,163 +153,75 @@ footer ul li {
   height: 50px;
 }
 
-/* Hero Section */
-.achievements-hero {
-  background: url("images/achievements_background.jpg") no-repeat center
-    center/cover;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  text-align: center;
-}
-
-.achievements-hero .container {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.achievements-hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.achievements-hero p {
-  font-size: 1.2rem;
-}
-
-/* Achievements Content */
-.achievements-content {
-  background-color: #1c1c1c;
-  padding: 40px;
-  border-radius: 10px;
-  color: #ffffff;
-}
-
-.achievements-content h3 {
+#career h3 {
   margin-top: 30px;
   color: #9748cc;
 }
 
-.achievements-content ul {
-  list-style: disc;
-  margin: 20px;
-  padding-left: 40px;
-}
-
-.achievements-content table {
+#career table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  border: 2px solid #ffffff;
 }
 
-.achievements-content table th,
-.achievements-content table td {
-  border: 1px solid #ffffff;
+#career td {
   padding: 10px;
   text-align: left;
 }
 
-.achievements-content table th {
+#career th {
+  padding: 10px;
+  text-align: left;
   background-color: #3a3a3a;
   color: #9748cc;
+  font-size: larger;
+  border-bottom: 2px solid #ffffff;
 }
 
-.achievements-content table tbody tr:nth-child(odd) {
+#career tr:nth-child(odd) {
   background-color: #2a2a2a;
 }
 
-.achievements-content table tbody tr:nth-child(even) {
+#career tr:nth-child(even) {
   background-color: #1c1c1c;
 }
 
-/* Additional Styles for Gallery Page */
-
-/* Hero Section */
-.gallery-hero {
-  background: url("images/gallery_background.jpg") no-repeat center center/cover;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
+#gallery h3 {
+  color: #9748cc;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.gallery-hero .container {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.gallery-hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.gallery-hero p {
-  font-size: 1.2rem;
-}
-
-/* Gallery Section */
-.gallery-section {
-  background-color: #1c1c1c;
-  padding: 40px;
-  border-radius: 10px;
-  color: #ffffff;
-}
-
-.gallery-section h3 {
-  color: #9748cc;
-  margin-bottom: 20px;
-}
-
-.gallery-grid {
+#gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.gallery-grid img {
-  width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.05);
-}
-
-/* Video Gallery */
-.video-gallery {
-  background: #121212;
-  padding: 40px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.video-gallery h3 {
-  color: #9748cc;
-  margin-bottom: 20px;
-}
-
-.video-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
   justify-items: center;
 }
 
-iframe {
-  border: none;
-  border-radius: 10px;
+#gallery-grid img {
+  transition: transform 0.3s;
 }
 
-/* Additional Styles for Contact Page */
+#gallery-grid img:hover {
+  transform: scale(1.5);
+}
 
-/* Hero Section */
+#video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+#video-grid iframe {
+  width: 450px;
+  height: 250px;
+}
+
 .contact-hero {
   background: url("images/contact_background.jpg") no-repeat center center/cover;
   height: 50vh;
@@ -407,14 +322,26 @@ iframe {
   border-radius: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .welcome {
-    height: 50vh;
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 50px;
   }
 
-  .welcome-content h2 {
-    font-size: 1.5rem;
+  .block {
+    height: 300px;
+  }
+
+  .block-content h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  .block-content p {
+    font-size: 15px;
+  }
+
+  .block-content .button {
+    padding: 5px 10px;
   }
 
   nav ul {
@@ -423,6 +350,10 @@ iframe {
   }
 
   nav ul li {
-    margin: 10px 0;
+    margin: 5px 0;
+  }
+
+  nav ul li a:active {
+    text-decoration: underline;
   }
 }
