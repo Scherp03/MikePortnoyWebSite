@@ -9,6 +9,11 @@
     />
     <title>Mike Portnoy - Contact</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 600px) "
+      href="smartphone.css"
+    />
   </head>
 
   <body>
@@ -28,8 +33,11 @@
     </header>
 
     <main>
-      <section class="contact-hero">
-        <div class="container">
+      <section
+        class="block"
+        style="background: url(images/mikeContact.jpg) center/cover"
+      >
+        <div class="block-content">
           <h2>Contact Us</h2>
           <p>
             We'd love to hear from you! Reach out for any inquiries or fan
@@ -38,7 +46,7 @@
         </div>
       </section>
 
-      <section class="contact-section">
+      <section id="contact">
         <div class="container">
           <h3>Get in Touch</h3>
           <form
@@ -60,19 +68,18 @@
         </div>
       </section>
 
-      <section class="map-section">
+      <section id="map">
         <div class="container">
-          <h3>Our Location</h3>
-          <div class="map-wrapper">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093727!2d144.95373631531694!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%20CBD!5e0!3m2!1sen!2sau!4v1602628123456!5m2!1sen!2sau"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
+          <h3>Mike Lives Here</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1163561.2069030902!2d-76.2533778049757!3d39.82259566696273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c43ce96061db65%3A0x77210f0c9b5761c2!2sUpper%20Saucon%20Township%2C%20Pennsylvania%2C%20Stati%20Uniti!5e0!3m2!1sit!2ssi!4v1734468628175!5m2!1sit!2ssi"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
     </main>

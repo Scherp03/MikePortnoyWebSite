@@ -18,7 +18,6 @@ h2 {
   padding: 10px;
 }
 
-/* header */
 header {
   background: linear-gradient(to right, #1c1c1c, #5e5e5e);
   padding: 10px 0;
@@ -76,8 +75,9 @@ img {
 }
 
 .block-content {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   padding: 20px;
+  margin: 0 20px;
   border-radius: 10px;
 }
 
@@ -222,138 +222,72 @@ footer ul li {
   height: 250px;
 }
 
-.contact-hero {
-  background: url("images/contact_background.jpg") no-repeat center center/cover;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  text-align: center;
-}
-
-.contact-hero .container {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.contact-hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.contact-hero p {
-  font-size: 1.2rem;
-}
-
-/* Contact Form Section */
-.contact-section {
+#contact {
   background-color: #1c1c1c;
   padding: 40px;
   border-radius: 10px;
   color: #ffffff;
 }
 
-.contact-section h3 {
+#contact h3 {
   color: #9748cc;
   margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
-.contact-section form {
+#contact form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.contact-section label {
-  font-size: 1rem;
+#contact label {
+  font-size: 20px;
 }
 
-.contact-section input,
-.contact-section textarea {
+#contact input,
+#contact textarea {
   padding: 10px;
   border: 1px solid #3a3a3a;
   border-radius: 5px;
   background-color: #2a2a2a;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 20px;
 }
 
-.contact-section input:focus,
-.contact-section textarea:focus {
-  border-color: #9748cc;
-  outline: none;
-}
-
-.contact-section .button {
+#contact .button {
   background-color: #9748cc;
   color: #ffffff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.contact-section .button:hover {
+#contact .button:hover {
   background-color: #390263;
 }
 
-/* Map Section */
-.map-section {
+#map {
   background: #121212;
   padding: 40px;
   border-radius: 10px;
   text-align: center;
 }
 
-.map-section h3 {
+#map h3 {
   color: #9748cc;
   margin-bottom: 20px;
+  font-size: 30px;
 }
 
-.map-wrapper iframe {
+#map iframe {
   width: 100%;
   max-width: 600px;
   height: 450px;
   border: none;
   border-radius: 10px;
-}
-
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 50px;
-  }
-
-  .block {
-    height: 300px;
-  }
-
-  .block-content h2 {
-    font-size: 25px;
-    margin-bottom: 5px;
-  }
-
-  .block-content p {
-    font-size: 15px;
-  }
-
-  .block-content .button {
-    padding: 5px 10px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 5px 0;
-  }
-
-  nav ul li a:active {
-    text-decoration: underline;
-  }
 }
